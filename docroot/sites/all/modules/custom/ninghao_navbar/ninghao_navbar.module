@@ -5,6 +5,7 @@
 */
 
 function ninghao_navbar_page_build(&$page) {
+  # dpm($page);
   if (user_access('access navbar')) {
   $module_path = drupal_get_path('module', 'ninghao_navbar');
   drupal_add_css($module_path . '/css/ninghao.navbar.css',
